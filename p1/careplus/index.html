@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>عيادة الشفاء - رعاية طبية متكاملة</title>
+<!-- Google Fonts: IBM Plex Sans Arabic -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#eeedf4",
+                        "surface-variant": "#e3e1e9",
+                        "on-surface-variant": "#444651",
+                        "outline-variant": "#c5c5d3",
+                        "secondary": "#006c4a",
+                        "on-tertiary-container": "#f39461",
+                        "on-primary-fixed-variant": "#264191",
+                        "on-primary-fixed": "#00164e",
+                        "secondary-fixed-dim": "#68dba9",
+                        "on-background": "#1a1b21",
+                        "secondary-fixed": "#85f8c4",
+                        "surface-bright": "#faf8ff",
+                        "on-secondary-fixed-variant": "#005137",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dce1ff",
+                        "on-surface": "#1a1b21",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#1e3a8a",
+                        "tertiary": "#4b1c00",
+                        "surface-container-high": "#e9e7ef",
+                        "secondary-container": "#82f5c1",
+                        "surface-tint": "#4059aa",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#90a8ff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#b6c4ff",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "tertiary-container": "#6e2c00",
+                        "primary": "#00236f",
+                        "surface": "#faf8ff",
+                        "tertiary-fixed": "#ffdbcb",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#773205",
+                        "surface-container-low": "#f4f3fa",
+                        "tertiary-fixed-dim": "#ffb691",
+                        "on-secondary-container": "#00714e",
+                        "background": "#faf8ff",
+                        "on-secondary-fixed": "#002114",
+                        "on-tertiary-fixed": "#341100",
+                        "surface-container-highest": "#e3e1e9",
+                        "inverse-surface": "#2f3036",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dad9e1",
+                        "outline": "#757682",
+                        "inverse-on-surface": "#f1f0f7",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "gutter": "24px",
+                        "stack-md": "16px",
+                        "container-max-width": "1280px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "16px",
+                        "stack-lg": "32px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["IBM Plex Sans Arabic"],
+                        "label-sm": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "headline-md": ["IBM Plex Sans Arabic"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "headline-sm": ["IBM Plex Sans Arabic"],
+                        "title-lg": ["IBM Plex Sans Arabic"],
+                        "display-lg": ["IBM Plex Sans Arabic"],
+                        "label-md": ["IBM Plex Sans Arabic"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "60px", "letterSpacing": "0", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Header Component -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<nav class="flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop h-[72px] w-full max-w-container-max-width mx-auto">
+<!-- Logo -->
+<a class="font-title-lg text-title-lg font-bold text-primary dark:text-primary-fixed flex items-center gap-2" href="#">
+<span class="material-symbols-outlined icon-fill text-[32px] text-primary">health_and_safety</span>
+                عيادة الشفاء
+            </a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex flex-row-reverse gap-stack-lg items-center">
+<li><a class="font-label-md text-label-md text-primary dark:text-primary-fixed font-bold border-b-2 border-primary py-2 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">الرئيسية</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant py-2 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#services">خدماتنا</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant py-2 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#doctors">أطباؤنا</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant py-2 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#booking">المواعيد</a></li>
+</ul>
+<!-- CTA & Mobile Menu Toggle -->
+<div class="flex items-center gap-4 flex-row-reverse">
+<a class="hidden md:inline-flex bg-primary text-on-primary font-label-md text-label-md px-6 h-12 rounded-full items-center justify-center hover:bg-primary/90 transition-colors shadow-md" href="#booking">
+                    احجز موعداً
+                </a>
+<button class="md:hidden text-primary p-2" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Menu (Hidden by default) -->
+<div class="hidden md:hidden bg-surface absolute top-[72px] left-0 w-full border-b border-outline-variant/30 shadow-lg flex-col px-margin-mobile py-stack-md gap-4" id="mobile-menu">
+<a class="font-label-md text-label-md text-primary font-bold block py-2 border-b border-outline-variant/20" href="#">الرئيسية</a>
+<a class="font-label-md text-label-md text-on-surface-variant block py-2 border-b border-outline-variant/20" href="#services">خدماتنا</a>
+<a class="font-label-md text-label-md text-on-surface-variant block py-2 border-b border-outline-variant/20" href="#doctors">أطباؤنا</a>
+<a class="font-label-md text-label-md text-on-surface-variant block py-2 mb-4" href="#booking">المواعيد</a>
+<a class="bg-primary text-on-primary font-label-md text-label-md w-full h-12 rounded-full flex items-center justify-center" href="#booking">احجز موعداً</a>
+</div>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface-container-low py-12 md:py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max-width mx-auto grid md:grid-cols-2 gap-gutter items-center">
+<!-- Content -->
+<div class="flex flex-col gap-stack-md text-center md:text-right z-10">
+<div class="inline-flex items-center justify-center md:justify-start gap-2 text-primary bg-primary-fixed/30 w-fit px-4 py-1.5 rounded-full mb-2 mx-auto md:mx-0">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="font-label-sm text-label-sm font-semibold">عيادة معتمدة دولياً</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary leading-tight">
+                        رعاية طبية متكاملة <br class="hidden md:block"/> تثق بها لأسرتك
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[500px] mx-auto md:mx-0">
+                        نقدم أحدث التقنيات الطبية مع نخبة من أفضل الاستشاريين لضمان حصولك على الرعاية التي تستحقها في بيئة آمنة ومريحة.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4 justify-center md:justify-start">
+<a class="h-[48px] bg-primary text-on-primary px-8 rounded-full font-label-md text-label-md flex items-center justify-center hover:bg-primary/90 transition-all shadow-md hover:shadow-lg" href="#booking">
+                            احجز موعدك الآن
+                        </a>
+<a class="h-[48px] bg-secondary text-on-secondary px-8 rounded-full font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-secondary/90 transition-all shadow-md" href="#">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                            تواصل عبر الواتساب
+                        </a>
+</div>
+</div>
+<!-- Image -->
+<div class="relative mt-8 md:mt-0 z-10">
+<!-- Decorative background blob -->
+<div class="absolute -inset-4 bg-primary-fixed/40 rounded-full blur-3xl -z-10"></div>
+<div class="rounded-xl overflow-hidden shadow-2xl border-4 border-white transform hover:scale-[1.01] transition-transform duration-500 relative aspect-[4/3] bg-surface-variant">
+<img alt="طبيب في عيادة الشفاء" class="w-full h-full object-cover" data-alt="A bright, modern medical clinic interior with state-of-the-art equipment. A professional male doctor of Middle Eastern descent in a pristine white coat is smiling warmly at the camera, standing in a brightly lit, sterile yet welcoming consulting room. The lighting is high-key, creating a clean, trustworthy, and premium corporate healthcare aesthetic with subtle blue and white tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBXZGynOqkNkvaitZleaxB2_rFA9KeBIhW9UhhuMl7aET0zTpjFWbW43mZ1KXaQLcSwqNQpS6ysRG4qcMeTmuNf9z2k2RRVPN5S6bV7Ha4FX7jQ_JRjfIiOIXNwPdFjG9jeu4zWtZOF_SOfEpd28dhlqj-o3wNgf0fxly4NxcivN-DELvDzo8ASM1-dYxYDA_WItHuEoXpklJZBiC5tRQiQT_VakM3r-TyvPYMYiOEz0uXexKaXXYadg"/>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg border border-outline-variant/20 flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+<div class="bg-secondary-container text-on-secondary-container p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">hotel_class</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">تقييم المرضى</p>
+<p class="font-title-lg text-title-lg text-on-surface">4.9/5</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Grid -->
+<section class="py-12 bg-white px-margin-mobile md:px-margin-desktop relative -mt-8 z-20">
+<div class="max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30 flex items-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-fixed text-primary flex items-center justify-center rounded-lg shrink-0">
+<span class="material-symbols-outlined text-[28px]">monitor_heart</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">أحدث الأجهزة</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">تقنيات طبية متطورة للتشخيص الدقيق</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30 flex items-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-fixed text-primary flex items-center justify-center rounded-lg shrink-0">
+<span class="material-symbols-outlined text-[28px]">group</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">نخبة الاستشاريين</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">أطباء ذوو خبرة وكفاءة عالية</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30 flex items-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-fixed text-primary flex items-center justify-center rounded-lg shrink-0">
+<span class="material-symbols-outlined text-[28px]">schedule</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">حجز بدون انتظار</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">نظام مواعيد دقيق يحترم وقتك</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section class="py-16 md:py-24 bg-surface-container-lowest px-margin-mobile md:px-margin-desktop" id="services">
+<div class="max-w-container-max-width mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">خدماتنا الطبية</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">نقدم مجموعة شاملة من الخدمات الطبية لتلبية احتياجاتك الصحية بأعلى معايير الجودة.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Service Card 1 -->
+<div class="bg-white rounded-xl border border-outline-variant/30 p-6 flex flex-col items-center text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+<div class="w-16 h-16 bg-primary-fixed/50 group-hover:bg-primary group-hover:text-white text-primary rounded-full flex items-center justify-center mb-4 transition-colors">
+<span class="material-symbols-outlined text-[32px]">favorite</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">أمراض القلب</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">تشخيص وعلاج أمراض القلب والأوعية الدموية بأحدث التقنيات.</p>
+<a class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1 hover:gap-2 transition-all" href="#booking">
+                            احجز الآن
+                            <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-white rounded-xl border border-outline-variant/30 p-6 flex flex-col items-center text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+<div class="w-16 h-16 bg-primary-fixed/50 group-hover:bg-primary group-hover:text-white text-primary rounded-full flex items-center justify-center mb-4 transition-colors">
+<span class="material-symbols-outlined text-[32px]">pediatrics</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">طب الأطفال</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">رعاية صحية متكاملة لحديثي الولادة والأطفال في بيئة صديقة.</p>
+<a class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1 hover:gap-2 transition-all" href="#booking">
+                            احجز الآن
+                            <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-white rounded-xl border border-outline-variant/30 p-6 flex flex-col items-center text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+<div class="w-16 h-16 bg-primary-fixed/50 group-hover:bg-primary group-hover:text-white text-primary rounded-full flex items-center justify-center mb-4 transition-colors">
+<span class="material-symbols-outlined text-[32px]">dentistry</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">طب الأسنان</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">علاجات تجميلية ووقائية للحصول على ابتسامة صحية ومشرقة.</p>
+<a class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1 hover:gap-2 transition-all" href="#booking">
+                            احجز الآن
+                            <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</a>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-white rounded-xl border border-outline-variant/30 p-6 flex flex-col items-center text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+<div class="w-16 h-16 bg-primary-fixed/50 group-hover:bg-primary group-hover:text-white text-primary rounded-full flex items-center justify-center mb-4 transition-colors">
+<span class="material-symbols-outlined text-[32px]">biotech</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">التحاليل الطبية</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">مختبر متكامل لنتائج دقيقة وسريعة لمختلف الفحوصات.</p>
+<a class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1 hover:gap-2 transition-all" href="#booking">
+                            احجز الآن
+                            <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Doctors -->
+<section class="py-16 md:py-24 bg-surface-container-low px-margin-mobile md:px-margin-desktop" id="doctors">
+<div class="max-w-container-max-width mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">نخبة أطبائنا</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">تعرف على فريقنا الطبي المتميز ذو الخبرة الطويلة.</p>
+</div>
+<a class="font-label-md text-label-md border-2 border-primary text-primary px-6 h-10 rounded-full flex items-center hover:bg-primary hover:text-white transition-colors" href="#">
+                        عرض جميع الأطباء
+                    </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Doctor 1 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-outline-variant/20">
+<div class="h-64 bg-surface-variant relative">
+<img alt="د. أحمد محمود" class="w-full h-full object-cover" data-alt="Professional portrait of a male Middle Eastern doctor, in his late 40s, wearing a white coat and stethoscope. He has a warm, confident smile and is standing in a brightly lit modern clinic environment with soft blue tones in the background. High-quality corporate healthcare photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCueLuaV2aTYh8JLL7ggE_cAf0bzK9AlAOh1jCvcmAU-YFSyVdPbL0w7BR0gZz_l3j2IkL3gcBHIbthWr1fZsPTmyrbd5t3JeD9iqilEGZVKXjW_oxBEw4fRlnWfTS7b5aXtYvjzD_wjSJNeRjxk2P67GVXWQxFhfTsTwpT32gCeNqxMdUftksiBE641dw60tmILQz5S0VQ--xNOenJPae3AXJ152iccF-IxhrGHs7lwvUNBW60gGF0iA"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+                                خبرة +15 سنة
+                            </div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">د. أحمد محمود</h3>
+<p class="font-body-md text-body-md text-primary font-medium mb-4">استشاري أمراض القلب</p>
+<a class="block w-full text-center py-2 bg-surface-container-high hover:bg-primary-fixed/50 text-primary font-label-md text-label-md rounded-lg transition-colors" href="#booking">حجز موعد</a>
+</div>
+</div>
+<!-- Doctor 2 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-outline-variant/20">
+<div class="h-64 bg-surface-variant relative">
+<img alt="د. سارة خالد" class="w-full h-full object-cover" data-alt="Professional portrait of a female Middle Eastern doctor, in her 30s, wearing a white coat and a hijab. She is smiling gently, standing in a clean, modern medical setting with bright, natural lighting. The mood is approachable, professional, and trustworthy, utilizing a light color palette with soft corporate blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj28VVJe88M5aWbChIjaL4sbTW-ydYzi_hejww4Fp19YiWF7ciLAiKjhtJ4aB9MHHfasGcRor8V3-QNWujk6WLR42IlclQgoMaMj4CZaoht8838dQLotVfUWNKrKOcyd-g1qMkTq9uqyCNHLWvOrA3X2nDt923LA2mxzaJ5PG_IoELklVMLVvGgGS35A31DTB-NW5eBEAzh3Rw5JHjMPhMA64ukqq4iCOMfPPiXMptpAGozl6KYy24Tg"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+                                خبرة +10 سنوات
+                            </div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">د. سارة خالد</h3>
+<p class="font-body-md text-body-md text-primary font-medium mb-4">أخصائية طب الأطفال</p>
+<a class="block w-full text-center py-2 bg-surface-container-high hover:bg-primary-fixed/50 text-primary font-label-md text-label-md rounded-lg transition-colors" href="#booking">حجز موعد</a>
+</div>
+</div>
+<!-- Doctor 3 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-outline-variant/20">
+<div class="h-64 bg-surface-variant relative">
+<img alt="د. عمر حسن" class="w-full h-full object-cover" data-alt="Professional portrait of a male Middle Eastern dentist, in his 40s, wearing scrubs. He is smiling confidently, holding a small dental mirror. The background is a slightly blurred, pristine modern dental clinic with high-key lighting. The aesthetic is clean, hygienic, and reassuring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA03zhOWkrDNBnrLAW_QrO9m4oYcL-LEH2kHJn7Z3-e8zwjP0IHakDx57tTzCe9j25DOa4qLKsq5Y6KCboRnfag4Wt-BMQiZhAy-rev0k6YJGm898nl26z0NHuz_4moQWFERTwTqkqPrYseo6b4w0U05BUVoxBE5ZNet_Qu8TqeQQX7ODqkrVU6W3TTvS3hXgrGCvSjsvQdSy81DZmaj7mn5UKwmwLUqdojhyBy5O75ggSIdLBg78DCuA"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+                                خبرة +12 سنة
+                            </div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">د. عمر حسن</h3>
+<p class="font-body-md text-body-md text-primary font-medium mb-4">استشاري جراحة الأسنان</p>
+<a class="block w-full text-center py-2 bg-surface-container-high hover:bg-primary-fixed/50 text-primary font-label-md text-label-md rounded-lg transition-colors" href="#booking">حجز موعد</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-16 md:py-24 bg-white px-margin-mobile md:px-margin-desktop" id="booking">
+<div class="max-w-[1000px] mx-auto bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline-variant/20 overflow-hidden flex flex-col md:flex-row">
+<!-- Info Panel -->
+<div class="bg-primary p-8 md:w-2/5 text-on-primary flex flex-col justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white/10 to-transparent"></div>
+<div class="relative z-10">
+<h2 class="font-headline-md text-headline-md mb-4 text-white">احجز موعدك الآن</h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim mb-8">احصل على استشارة طبية متخصصة. فريقنا جاهز لاستقبالك وتقديم أفضل رعاية.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1 text-secondary-fixed">location_on</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-white">العنوان</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">شارع الملك فهد، حي العليا، الرياض</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1 text-secondary-fixed">schedule</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-white">ساعات العمل</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">السبت - الخميس: 9 ص - 10 م<br/>الجمعة: مغلق</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1 text-secondary-fixed">call</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-white">الهاتف</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim" dir="ltr">+966 12 345 6789</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Form -->
+<div class="p-8 md:p-10 md:w-3/5 bg-white">
+<form class="space-y-6" id="booking-form">
+<!-- Success Message (Hidden by default) -->
+<div class="hidden bg-secondary-container text-on-secondary-container p-4 rounded-lg flex items-center gap-3" id="form-success">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<p class="font-label-md text-label-md font-bold">تم إرسال طلب الحجز بنجاح! سنتواصل معك قريباً لتأكيد الموعد.</p>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="fullName">الاسم الكامل <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md" id="fullName" placeholder="أدخل اسمك الثلاثي" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="phone">رقم الهاتف <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md" dir="ltr" id="phone" placeholder="05x xxx xxxx" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="date">التاريخ المفضل <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md" id="date" required="" type="date"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="service">العيادة / الخدمة المطلوبة</label>
+<select class="w-full h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md appearance-none bg-white" id="service">
+<option disabled="" selected="" value="">اختر العيادة...</option>
+<option value="cardio">أمراض القلب</option>
+<option value="pediatrics">طب الأطفال</option>
+<option value="dental">طب الأسنان</option>
+<option value="lab">التحاليل الطبية</option>
+<option value="general">استشارة عامة</option>
+</select>
+</div>
+<button class="w-full h-12 bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary/90 transition-colors shadow-md mt-4" type="submit">
+                            تأكيد طلب الحجز
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full pt-stack-lg pb-stack-md bg-inverse-surface dark:bg-surface-container-lowest flex flex-col items-center gap-stack-md px-margin-desktop w-full">
+<!-- Brand / Logo -->
+<div class="font-headline-sm text-headline-sm font-bold text-primary-fixed-dim opacity-90 hover:opacity-100 transition-opacity">
+            عيادة الشفاء
+        </div>
+<!-- Navigation Links -->
+<ul class="flex flex-wrap justify-center gap-6">
+<li><a class="font-body-md text-body-md text-outline-variant dark:text-outline hover:text-secondary-fixed-dim transition-colors opacity-90 hover:opacity-100" href="#">سياسة الخصوصية</a></li>
+<li><a class="font-body-md text-body-md text-outline-variant dark:text-outline hover:text-secondary-fixed-dim transition-colors opacity-90 hover:opacity-100" href="#">الشروط والأحكام</a></li>
+<li><a class="font-body-md text-body-md text-outline-variant dark:text-outline hover:text-secondary-fixed-dim transition-colors opacity-90 hover:opacity-100" href="#">ساعات العمل</a></li>
+<li><a class="font-body-md text-body-md text-outline-variant dark:text-outline hover:text-secondary-fixed-dim transition-colors opacity-90 hover:opacity-100" href="#">موقعنا</a></li>
+</ul>
+<!-- Copyright -->
+<div class="font-body-md text-body-md text-surface-bright dark:text-on-surface mt-4 border-t border-outline-variant/20 pt-4 w-full text-center">
+            © 2024 عيادة الشفاء. جميع الحقوق محفوظة.
+        </div>
+</footer>
+<!-- Interactive Scripts -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                
+                // Toggle icon
+                const icon = menuBtn.querySelector('span');
+                if(mobileMenu.classList.contains('flex')) {
+                    icon.textContent = 'close';
+                } else {
+                    icon.textContent = 'menu';
+                }
+            });
+
+            // Close mobile menu on link click
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    menuBtn.querySelector('span').textContent = 'menu';
+                });
+            });
+
+            // Form Handling
+            const bookingForm = document.getElementById('booking-form');
+            const formSuccess = document.getElementById('form-success');
+
+            bookingForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Basic validation (HTML5 required attributes handle most of it)
+                const fullName = document.getElementById('fullName').value;
+                const phone = document.getElementById('phone').value;
+                const date = document.getElementById('date').value;
+
+                if(fullName && phone && date) {
+                    // Simulate API call
+                    const submitBtn = bookingForm.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
+                    submitBtn.textContent = 'جاري الإرسال...';
+                    submitBtn.disabled = true;
+                    submitBtn.classList.add('opacity-70');
+
+                    setTimeout(() => {
+                        // Show success message
+                        formSuccess.classList.remove('hidden');
+                        
+                        // Reset form
+                        bookingForm.reset();
+                        
+                        // Reset button
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('opacity-70');
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            formSuccess.classList.add('hidden');
+                        }, 5000);
+                    }, 1500);
+                }
+            });
+            
+            // Set minimum date for booking to today
+            const dateInput = document.getElementById('date');
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        });
+    </script>
+</body></html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>نظام الابتكار - Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&amp;family=Readex+Pro:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed": "#e9ddff",
+                        "secondary-fixed": "#e9ddff",
+                        "surface-container-high": "#ece6ee",
+                        "on-surface": "#1d1b20",
+                        "tertiary-fixed": "#ffdf93",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "surface-container-highest": "#e6e0e9",
+                        "tertiary": "#765b00",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "primary": "#4f378a",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#645a7d",
+                        "on-background": "#1d1b20",
+                        "surface": "#fdf7ff",
+                        "surface-bright": "#fdf7ff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#cfbcff",
+                        "primary-container": "#6750a4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "background": "#fdf7ff",
+                        "error-container": "#ffdad6",
+                        "outline": "#7a7582",
+                        "on-primary-container": "#e0d2ff",
+                        "surface-tint": "#6750a4",
+                        "surface-variant": "#e6e0e9",
+                        "surface-container-low": "#f8f2fa",
+                        "inverse-on-surface": "#f5eff7",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#1f1635",
+                        "surface-dim": "#ded8e0",
+                        "secondary": "#63597c",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-tertiary-container": "#503d00",
+                        "on-surface-variant": "#494551",
+                        "surface-container": "#f2ecf4",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "inverse-primary": "#cfbcff",
+                        "tertiary-container": "#c9a74d",
+                        "secondary-container": "#e1d4fd",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-primary-fixed": "#22005d",
+                        "outline-variant": "#cbc4d2",
+                        "inverse-surface": "#322f35",
+                        "on-tertiary-fixed-variant": "#594400"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-mobile": "16px",
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "element-gap": "24px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Readex Pro"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "display-lg-mobile": ["Readex Pro"],
+                        "display-lg": ["Readex Pro"],
+                        "headline-sm": ["Readex Pro"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "label-caps": ["IBM Plex Sans Arabic"]
+                    },
+                    fontSize: {
+                        "headline-md": ["36px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "display-lg-mobile": ["40px", { lineHeight: "1.2", fontWeight: "700" }],
+                        "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-sm": ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "label-caps": ["14px", { lineHeight: "1.2", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #F8FAFC;
+            overflow-x: hidden;
+        }
+        .bg-gradient-glow {
+            background: radial-gradient(circle, rgba(103, 80, 164, 0.1) 0%, rgba(248, 250, 252, 0) 70%);
+        }
+        .btn-glow:hover {
+            box-shadow: 0px 8px 24px rgba(79, 55, 138, 0.3);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="font-body-lg text-on-surface relative">
+<!-- Ambient Glow Orbs -->
+<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-glow rounded-full pointer-events-none -z-10 translate-x-1/3 -translate-y-1/3"></div>
+<div class="absolute top-1/2 left-0 w-[800px] h-[800px] bg-gradient-glow rounded-full pointer-events-none -z-10 -translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-gradient-glow rounded-full pointer-events-none -z-10 translate-y-1/3"></div>
+<!-- TopAppBar -->
+<header class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] rounded-full bg-white/60 dark:bg-black/60 backdrop-blur-xl border border-white/80 dark:border-white/20 shadow-[0px_20px_40px_rgba(0,0,0,0.04)] flex flex-row-reverse justify-between items-center px-8 py-4 z-50 transition-all duration-300">
+<div class="flex items-center gap-4">
+<button class="hover:scale-105 hover:bg-white/80 transition-all duration-300 p-2 rounded-full active:scale-95 text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim bg-clip-text bg-gradient-to-r from-primary to-tertiary">نظام الابتكار</h1>
+</div>
+<nav class="hidden md:flex flex-row-reverse gap-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:scale-105 transition-all duration-300" href="#">الرئيسية</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-md text-body-md hover:scale-105 hover:bg-white/80 transition-all duration-300 px-3 py-1 rounded-full" href="#">المميزات</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-md text-body-md hover:scale-105 hover:bg-white/80 transition-all duration-300 px-3 py-1 rounded-full" href="#">المواصفات</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-md text-body-md hover:scale-105 hover:bg-white/80 transition-all duration-300 px-3 py-1 rounded-full" href="#">اتصل بنا</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps btn-glow transition-all duration-300 active:scale-95">ابتدأ الآن</button>
+</header>
+<main class="pt-40 max-w-container-max mx-auto px-gutter pb-section-gap">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-element-gap items-center mb-section-gap">
+<div class="order-2 md:order-1 flex justify-center">
+<div class="relative w-full max-w-md aspect-[3/4] rounded-xl overflow-hidden bg-white/40 backdrop-blur-md border border-white/80 p-8 shadow-[0px_20px_40px_rgba(0,0,0,0.04)]">
+<img class="object-cover w-full h-full rounded-lg" data-alt="A sleek, high-end smart device showcasing a futuristic design with a glass body and luminescent accents, resting on a clean white surface in a brightly lit, minimalist environment. The aesthetic is extremely modern and professional, reflecting a high-tech ecosystem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApWviNmCe4oUUsIYLr3H5RhWFa4umJhpj6s6-ksQ5X0H4VcwWqEKMHez_1-_gCJulcc2727Lpp3--tsd_bVyHxzOWZXxnCyMGxvPm1DpKKzAHBBrEbyzwf4Q4zLv5v47vLrHUOov5IHd2rQRC9LgoZCSUdWbiG7n9MhA6q43h66OdhOY_cBdOEdHuajTp_hcDfUG0hATflpI-GYlFzZKHAHbos4M_Aus-mBOU3Lrm15QpfKyQxYy_0Mg"/>
+</div>
+</div>
+<div class="order-1 md:order-2 flex flex-col gap-6 text-right">
+<h2 class="font-display-lg text-display-lg text-on-surface">المستقبل بين يديك.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    اكتشف الجيل الجديد من التكنولوجيا الذكية. تصميم زجاجي فاخر، أداء استثنائي، وتجربة مستخدم لا مثيل لها.
+                </p>
+<div class="flex gap-4 justify-end mt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-caps text-label-caps btn-glow transition-all duration-300">اطلب مسبقاً</button>
+<button class="bg-surface-variant text-on-surface-variant px-8 py-4 rounded-full font-label-caps text-label-caps hover:bg-surface-dim transition-all duration-300">اعرف المزيد</button>
+</div>
+</div>
+</section>
+<!-- Features Grid -->
+<section class="mb-section-gap">
+<h3 class="font-headline-md text-headline-md text-center mb-12 text-primary">مواصفات متقدمة</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-white/60 backdrop-blur-xl border border-white/80 rounded-xl p-8 hover:bg-white/80 hover:shadow-[0px_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="memory">memory</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">M3 Turbo Chip</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">أداء معالج استثنائي لسرعة فائقة في جميع المهام.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white/60 backdrop-blur-xl border border-white/80 rounded-xl p-8 hover:bg-white/80 hover:shadow-[0px_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-4" data-icon="battery_charging_full">battery_charging_full</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">36h Battery Life</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">بطارية تدوم طويلاً لتواكب يومك الحافل.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white/60 backdrop-blur-xl border border-white/80 rounded-xl p-8 hover:bg-white/80 hover:shadow-[0px_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="display_settings">display_settings</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">120Hz Display</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">شاشة Liquid Retina بسلاسة 120 هرتز.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white/60 backdrop-blur-xl border border-white/80 rounded-xl p-8 hover:bg-white/80 hover:shadow-[0px_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-4" data-icon="wifi_tethering">wifi_tethering</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Wi-Fi 7</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">اتصال لاسلكي أسرع وأكثر استقراراً.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-white/60 backdrop-blur-xl border border-white/80 rounded-xl p-8 hover:bg-white/80 hover:shadow-[0px_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="psychology">psychology</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Neural Engine</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">ذكاء اصطناعي متطور لتحسين تجربتك.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-white/60 backdrop-blur-xl border border-white/80 rounded-xl p-8 hover:bg-white/80 hover:shadow-[0px_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-4" data-icon="architecture">architecture</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Titanium Build</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">هيكل من التيتانيوم بدرجة صناعة الطيران.</p>
+</div>
+<!-- Card 7 -->
+<div class="bg-white/60 backdrop-blur-xl border border-white/80 rounded-xl p-8 hover:bg-white/80 hover:shadow-[0px_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="sync">sync</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Ecosystem Sync</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">تزامن سلس مع جميع أجهزتك الذكية.</p>
+</div>
+<!-- Card 8 -->
+<div class="bg-white/60 backdrop-blur-xl border border-white/80 rounded-xl p-8 hover:bg-white/80 hover:shadow-[0px_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-4" data-icon="security">security</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Advanced Security</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">حماية قصوى لبياناتك وخصوصيتك.</p>
+</div>
+</div>
+</section>
+<!-- Variant Selector & Pre-order -->
+<section class="bg-white/40 backdrop-blur-xl border border-white/80 rounded-xl p-12 shadow-[0px_20px_40px_rgba(0,0,0,0.04)] mb-section-gap">
+<h3 class="font-headline-md text-headline-md text-center mb-8 text-on-surface">اختر نسختك</h3>
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- Variant Selector -->
+<div class="flex-1 flex flex-col gap-6">
+<label class="cursor-pointer relative">
+<input checked="" class="peer sr-only" name="variant" type="radio"/>
+<div class="w-full bg-white/60 backdrop-blur-md border border-white/80 rounded-lg p-6 peer-checked:border-primary peer-checked:bg-primary-fixed/20 transition-all duration-300 flex justify-between items-center">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">النسخة القياسية</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">256GB / 8GB RAM</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">$999</span>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="variant" type="radio"/>
+<div class="w-full bg-white/60 backdrop-blur-md border border-white/80 rounded-lg p-6 peer-checked:border-primary peer-checked:bg-primary-fixed/20 transition-all duration-300 flex justify-between items-center">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">النسخة برو</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">512GB / 12GB RAM</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">$1299</span>
+</div>
+</label>
+</div>
+<!-- Form -->
+<div class="flex-1 flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row gap-4">
+<input class="w-full bg-white/40 backdrop-blur-md border border-white/80 rounded-lg p-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="الاسم الكامل" type="text"/>
+<input class="w-full bg-white/40 backdrop-blur-md border border-white/80 rounded-lg p-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="البريد الإلكتروني" type="email"/>
+</div>
+<input class="w-full bg-white/40 backdrop-blur-md border border-white/80 rounded-lg p-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="رقم الهاتف" type="tel"/>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-caps text-label-caps btn-glow transition-all duration-300 mt-4">تأكيد الطلب المسبق</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 border-t border-outline-variant bg-surface-container-highest dark:bg-inverse-surface flat no shadows">
+<div class="flex flex-col md:flex-row-reverse justify-between items-center max-w-container-max mx-auto px-gutter gap-element-gap">
+<div class="font-headline-sm text-headline-sm text-primary">
+                نظام الابتكار
+            </div>
+<nav class="flex gap-6">
+<a class="text-primary font-bold hover:text-primary transition-colors opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">الرئيسية</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">المميزات</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">المواصفات</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">اتصل بنا</a>
+</nav>
+<div class="text-primary dark:text-primary-fixed-dim font-body-md text-body-md">
+                © ٢٠٢٤ جميع الحقوق محفوظة للنظام التقني المتطور
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>سيروم توهج - بشرة متألقة وزجاجية</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#825100",
+                        "primary-fixed-dim": "#ffb0cd",
+                        "on-tertiary-fixed": "#2a1700",
+                        "outline-variant": "#debec8",
+                        "secondary-container": "#dc2c4f",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#3e0022",
+                        "surface-dim": "#dadad9",
+                        "background": "#f9f9f8",
+                        "secondary": "#b90538",
+                        "outline": "#8b7079",
+                        "on-surface-variant": "#574048",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#d23284",
+                        "surface-tint": "#b4136d",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#fffbff",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#e8e8e7",
+                        "on-secondary-fixed": "#40000d",
+                        "inverse-on-surface": "#f1f1f0",
+                        "tertiary-fixed": "#ffddb8",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eeeeed",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-container": "#fffbff",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "on-primary-fixed-variant": "#8c0053",
+                        "surface": "#f9f9f8",
+                        "secondary-fixed": "#ffdadb",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f9f9f8",
+                        "primary-fixed": "#ffd9e4",
+                        "tertiary-container": "#a36700",
+                        "on-background": "#1a1c1c",
+                        "inverse-primary": "#ffb0cd",
+                        "secondary-fixed-dim": "#ffb2b7",
+                        "on-primary-container": "#fffbff",
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-fixed-variant": "#92002a",
+                        "primary": "#b10e6b",
+                        "inverse-surface": "#2f3130",
+                        "surface-variant": "#e2e2e2",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f3f4f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Readex Pro"],
+                        "headline-xl-mobile": ["Readex Pro"],
+                        "headline-md": ["Readex Pro"],
+                        "body-md": ["Readex Pro"],
+                        "headline-xl": ["Readex Pro"],
+                        "label-bold": ["Readex Pro"],
+                        "headline-lg": ["Readex Pro"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Glassmorphism utilities */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px rgba(236, 72, 153, 0.15);
+        }
+        
+        .glass-nav {
+            background: rgba(249, 249, 248, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Ambient Orbs */
+        .ambient-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.6;
+        }
+        .orb-1 { width: 400px; height: 400px; background: radial-gradient(circle, #ffb0cd 0%, transparent 70%); top: -100px; right: -100px; }
+        .orb-2 { width: 500px; height: 500px; background: radial-gradient(circle, #ffddb8 0%, transparent 70%); bottom: -200px; left: -100px; }
+        .orb-3 { width: 300px; height: 300px; background: radial-gradient(circle, #ffd9e4 0%, transparent 70%); top: 40%; left: 20%; }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md relative overflow-x-hidden">
+<!-- Background Orbs -->
+<div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
+<div class="ambient-orb orb-1"></div>
+<div class="ambient-orb orb-2"></div>
+<div class="ambient-orb orb-3" id="cursorOrb"></div>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-md transition-all duration-300">
+<div class="flex flex-row-reverse justify-between items-center w-full px-lg py-md max-w-container-max mx-auto md:px-lg px-md">
+<!-- Logo -->
+<a class="flex items-center gap-2" href="#">
+<img alt="توهج Logo" class="h-10 w-10 object-contain rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCft5wMhQE8FwnG_NDGTBcBXfmxhejSQWR-s1jr6CBfxiPV21W-TdTU57eC4GXaw5u9tZ2SvFkOnGnbu8DZFDWREzbKnoZKlwypsVHmn-9AXyxdKFWjQoQNX0pcPBpyLEP5VGr2AD-2xYusfZGyXD3NL4TI2RzOBhHaozWaFRrNVbF8yVvqpSmz1TeKJ9CqWkrGNlq6RNdN_oWyDz8naetMb0ksKknDYdGlpsrGUyHBaHcGlMOFWLHm"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim hidden md:block">توهج</span>
+</a>
+<!-- Desktop Links -->
+<div class="hidden md:flex flex-row-reverse gap-8 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#features">المميزات</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#results">النتائج</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#ingredients">المكونات</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#reviews">التقييمات</a>
+</div>
+<!-- CTA -->
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-bold px-6 py-3 rounded-full hover:scale-105 hover:brightness-110 transition-all shadow-[0_4px_14px_0_rgba(177,14,107,0.39)]" href="#order">اطلب الآن</a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2" id="mobileMenuBtn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu (Hidden by default) -->
+<div class="hidden md:hidden absolute top-full left-0 w-full bg-surface-container-lowest border-b border-outline-variant/30 shadow-lg flex-col p-4 gap-4 text-center" id="mobileMenu">
+<a class="block py-2 font-body-md text-on-surface-variant hover:text-primary" href="#features">المميزات</a>
+<a class="block py-2 font-body-md text-on-surface-variant hover:text-primary" href="#results">النتائج</a>
+<a class="block py-2 font-body-md text-on-surface-variant hover:text-primary" href="#ingredients">المكونات</a>
+<a class="block py-2 font-body-md text-on-surface-variant hover:text-primary" href="#reviews">التقييمات</a>
+<a class="block py-3 mt-2 bg-primary text-on-primary rounded-full font-label-bold w-full" href="#order">اطلب الآن</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-[100px] pb-xl flex flex-col gap-xl">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-md md:px-lg min-h-[80vh] flex flex-col md:flex-row-reverse items-center justify-center gap-lg">
+<div class="flex-1 text-center md:text-right space-y-6 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-bold text-sm mb-2 shadow-sm border border-tertiary/20">جديد وحصري</span>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-background leading-tight">
+                    بشرة متألقة وزجاجية في <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">7 أيام فقط</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto md:mx-0">
+                    اكتشفي سر الإشراقة الفورية مع سيروم توهج. تركيبة متطورة تجمع بين حمض الهيالورونيك وفيتامين سي لبشرة ممتلئة، نضرة، وخالية من العيوب.
+                </p>
+<div class="flex flex-col sm:flex-row-reverse gap-4 justify-center md:justify-start pt-4">
+<a class="bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-bold text-lg px-8 py-4 rounded-full hover:scale-105 hover:brightness-110 transition-all shadow-[0_8px_24px_0_rgba(177,14,107,0.4)] flex items-center justify-center gap-2" href="#order">
+<span>اطلبي الآن</span>
+<span class="material-symbols-outlined">arrow_back</span>
+</a>
+<a class="bg-surface text-primary border border-primary/20 font-label-bold text-lg px-8 py-4 rounded-full hover:bg-primary-fixed transition-colors flex items-center justify-center gap-2" href="#features">
+<span>اكتشفي المزيد</span>
+</a>
+</div>
+<div class="flex items-center justify-center md:justify-start gap-2 text-sm text-on-surface-variant pt-2">
+<span class="material-symbols-outlined text-secondary filled">verified</span>
+<span>ضمان استرداد الأموال لمدة 30 يوماً</span>
+</div>
+</div>
+<div class="flex-1 relative z-10 w-full max-w-md md:max-w-none">
+<div class="relative rounded-[2rem] overflow-hidden shadow-2xl glass-card p-2 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="زجاجة سيروم توهج الأنيقة على خلفية رخامية مع بتلات الورد" class="w-full h-auto rounded-[1.5rem] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkr-uMVBV9jU2mX0VpTs59AZj9Fg5zz873wtN9KTIg1faVq0YEzqJdxaY4GUYIViyM0ZQB-U2hnnjs7FoC_vFhtcF7PcyDsbZDO-zpnIZZ6HYyVKp8c2nPiT4a6ZtV0YQHQ-yAZHvyjSKgyLuLgN36ghutHV4i1rKZIGJLQirElpx-N_9bSbaos7t9NOMmU307KcCfhfp7Tid-L8UazCZgiGJIaaZiwhwmmfJJqO4OvXOP-NtUr7yf"/>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -right-6 glass-card rounded-2xl p-4 flex items-center gap-3 animate-bounce shadow-xl">
+<div class="bg-primary/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined filled">star</span>
+</div>
+<div>
+<p class="font-label-bold text-primary">تقييم ممتاز</p>
+<p class="text-sm text-on-surface-variant">من 10,000+ عميلة</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features / Ingredients Bento Grid -->
+<section class="max-w-container-max mx-auto px-md md:px-lg py-xl" id="ingredients">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">تركيبة غنية لمفعول سحري</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">صُمم بعناية فائقة باستخدام أقوى المكونات النشطة لتغذية بشرتك من الأعماق.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="glass-card rounded-3xl p-8 flex flex-col items-center text-center group hover:bg-white/90 transition-all duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">water_drop</span>
+</div>
+<h3 class="font-headline-md text-on-background mb-3">حمض الهيالورونيك</h3>
+<p class="font-body-md text-on-surface-variant">ترطيب عميق يدوم طوال اليوم، يملأ الخطوط الدقيقة ويمنح بشرتك مظهراً ممتلئاً وشاباً.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card rounded-3xl p-8 flex flex-col items-center text-center group hover:bg-white/90 transition-all duration-300 transform md:-translate-y-4">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">flare</span>
+</div>
+<h3 class="font-headline-md text-on-background mb-3">فيتامين سي (Vitamin C)</h3>
+<p class="font-body-md text-on-surface-variant">مضاد أكسدة قوي يفتح لون البشرة، يوحد لونها، ويحميها من العوامل البيئية الضارة.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card rounded-3xl p-8 flex flex-col items-center text-center group hover:bg-white/90 transition-all duration-300">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">health_and_beauty</span>
+</div>
+<h3 class="font-headline-md text-on-background mb-3">نياسيناميد</h3>
+<p class="font-body-md text-on-surface-variant">يقلل من مظهر المسام الواسعة، ينظم إفراز الدهون، ويقوي حاجز الحماية الطبيعي للبشرة.</p>
+</div>
+</div>
+</section>
+<!-- Before & After Section -->
+<section class="w-full bg-surface-container-low py-xl relative overflow-hidden" id="results">
+<div class="max-w-container-max mx-auto px-md md:px-lg relative z-10">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 space-y-6 text-right">
+<h2 class="font-headline-lg text-headline-lg text-on-background">نتائج حقيقية، لا يمكن إنكارها</h2>
+<p class="font-body-lg text-on-surface-variant">شاهدي الفرق بنفسك. يقلل التصبغات، يشد البشرة، ويمنحك إشراقة طبيعية تدوم. 95% من المستخدمات لاحظن تحسناً ملحوظاً خلال الأسبوع الأول.</p>
+<ul class="space-y-3 pt-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary filled">check_circle</span>
+<span class="font-body-md text-on-background">بشرة أفتح بنسبة 40%</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary filled">check_circle</span>
+<span class="font-body-md text-on-background">ترطيب يدوم 24 ساعة</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary filled">check_circle</span>
+<span class="font-body-md text-on-background">تقليل ملحوظ للخطوط الدقيقة</span>
+</li>
+</ul>
+</div>
+<div class="flex-1 w-full relative">
+<div class="glass-card p-2 rounded-[2rem] shadow-xl">
+<img alt="صورة قبل وبعد استخدام سيروم توهج تظهر تحسناً ملحوظاً في نضارة وتوحيد لون البشرة" class="w-full rounded-[1.5rem] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu3KK4t-sUelat-CezYLYKwNC8Vz7miGyVJ_PHnpFh0a4AnPzbde_PHQUl48wRrPbJ5SAN8uG82MPQP6C0xQUU--N7RW_qOKTuYWiL3t2RQtzXnBQQeVsromKn81H88d0CAzsKGPW5w2yVh3hlXlWB6-wAQ_Z8EQ5VDXXYtxgdtEa3JR-9QNQ_X2gnMkeHOekJgJGJc6uYah1F9UiORsKGjZ_ufvvUDRWsVqO2KQMZvuf7tdgtXvA4"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Order Section -->
+<section class="max-w-4xl mx-auto px-md py-xl" id="order">
+<div class="glass-card rounded-[2rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+<!-- Decorative background inside card -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed rounded-full filter blur-3xl opacity-30 -z-10 translate-x-1/2 -translate-y-1/2"></div>
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">اطلبي سيروم توهج الآن</h2>
+<p class="font-body-md text-on-surface-variant">اختاري الباقة المناسبة لك واستمتعي ببشرة مثالية</p>
+</div>
+<form class="space-y-8" id="orderForm">
+<!-- Package Selection -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="cursor-pointer relative">
+<input checked="" class="peer sr-only" name="package" onchange="updateTotal()" type="radio" value="199"/>
+<div class="p-6 rounded-2xl border-2 border-outline-variant bg-surface-container-lowest peer-checked:border-primary peer-checked:bg-primary-fixed/20 transition-all hover:border-primary/50 text-center h-full flex flex-col justify-center">
+<h3 class="font-headline-md text-on-background mb-2">عبوة واحدة</h3>
+<p class="text-on-surface-variant mb-4">تكفي لمدة شهر</p>
+<p class="font-headline-lg text-primary">199 ريال</p>
+</div>
+<div class="absolute top-4 right-4 hidden peer-checked:block text-primary">
+<span class="material-symbols-outlined filled">check_circle</span>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="package" onchange="updateTotal()" type="radio" value="398"/>
+<div class="p-6 rounded-2xl border-2 border-outline-variant bg-surface-container-lowest peer-checked:border-primary peer-checked:bg-primary-fixed/20 transition-all hover:border-primary/50 text-center h-full flex flex-col justify-center relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full bg-tertiary text-on-tertiary text-xs font-label-bold py-1">الأكثر طلباً (2 + 1 مجاناً)</div>
+<h3 class="font-headline-md text-on-background mb-2 mt-4">الباقة الذهبية</h3>
+<p class="text-on-surface-variant mb-4">احصلي على 3 عبوات بسعر 2</p>
+<div class="flex items-center justify-center gap-2">
+<p class="font-headline-lg text-primary">398 ريال</p>
+<p class="text-sm text-outline line-through">597 ريال</p>
+</div>
+</div>
+<div class="absolute top-4 right-4 hidden peer-checked:block text-primary">
+<span class="material-symbols-outlined filled">check_circle</span>
+</div>
+</label>
+</div>
+<!-- User Details -->
+<div class="space-y-4 pt-6 border-t border-outline-variant/30">
+<div>
+<label class="block font-label-bold text-on-surface mb-2">الاسم الكامل</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant rounded-xl p-4 focus:ring-primary focus:border-primary text-on-background transition-colors" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface mb-2">رقم الجوال</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant rounded-xl p-4 focus:ring-primary focus:border-primary text-on-background text-right transition-colors" dir="ltr" placeholder="05x xxx xxxx" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface mb-2">المدينة</label>
+<select class="w-full bg-surface-container-lowest border-outline-variant rounded-xl p-4 focus:ring-primary focus:border-primary text-on-background transition-colors">
+<option>الرياض</option>
+<option>جدة</option>
+<option>الدمام</option>
+<option>مكة المكرمة</option>
+<option>أخرى</option>
+</select>
+</div>
+</div>
+<!-- Payment & Submit -->
+<div class="bg-surface-container rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div>
+<p class="text-on-surface-variant text-sm">الإجمالي المطلوب</p>
+<p class="font-headline-lg text-primary font-bold" id="totalPrice">199 ريال</p>
+<p class="text-xs text-on-surface-variant mt-1">الدفع عند الاستلام متاح</p>
+</div>
+<button class="w-full sm:w-auto bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-bold text-lg px-10 py-4 rounded-full hover:scale-105 hover:brightness-110 transition-all shadow-[0_8px_24px_0_rgba(177,14,107,0.4)]" type="submit">
+                            تأكيد الطلب
+                        </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim w-full py-xl border-t border-outline-variant/30 flex flex-col items-center gap-md w-full px-lg text-center">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-4">توهج</div>
+<div class="flex flex-wrap justify-center gap-6 mb-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">سياسة الخصوصية</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">الشروط والأحكام</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">تتبع الطلب</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">اتصل بنا</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant opacity-80 hover:opacity-100 mt-4">
+            © 2024 توهج للبشرة. جميع الحقوق محفوظة.
+        </div>
+</footer>
+<!-- Interactive Scripts -->
+<script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+
+        // Dynamic Price Update
+        function updateTotal() {
+            const selectedPackage = document.querySelector('input[name="package"]:checked').value;
+            document.getElementById('totalPrice').innerText = selectedPackage + ' ريال';
+        }
+
+        // Form Submit Simulation
+        document.getElementById('orderForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            btn.innerText = 'جاري المعالجة...';
+            btn.disabled = true;
+            btn.classList.add('opacity-75');
+            
+            setTimeout(() => {
+                btn.innerText = 'تم استلام طلبك بنجاح!';
+                btn.classList.replace('from-primary', 'from-green-600');
+                btn.classList.replace('to-primary-container', 'to-green-500');
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-75', 'from-green-600', 'to-green-500');
+                    btn.classList.add('from-primary', 'to-primary-container');
+                    e.target.reset();
+                    updateTotal();
+                }, 3000);
+            }, 1500);
+        });
+
+        // Optional: Simple Parallax/Orb follow effect for desktop
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            const cursorOrb = document.getElementById('cursorOrb');
+            let mouseX = window.innerWidth / 2;
+            let mouseY = window.innerHeight / 2;
+            let orbX = mouseX;
+            let orbY = mouseY;
+
+            window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            function animateOrb() {
+                // Easing factor
+                orbX += (mouseX - orbX) * 0.05;
+                orbY += (mouseY - orbY) * 0.05;
+                
+                // Keep orb somewhat centered but follow cursor slightly
+                const transformX = (orbX - window.innerWidth / 2) * 0.3;
+                const transformY = (orbY - window.innerHeight / 2) * 0.3;
+
+                cursorOrb.style.transform = `translate(${transformX}px, ${transformY}px)`;
+                requestAnimationFrame(animateOrb);
+            }
+            animateOrb();
+        }
+    </script>
+</body></html>
